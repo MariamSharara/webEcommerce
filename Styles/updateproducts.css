@@ -1,0 +1,129 @@
+body {
+  background: rgb(230, 230, 230);
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.b1 a:hover {
+  text-decoration: underline;
+  color: rgb(30, 30, 30);
+}
+
+.addproduct-box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 650px;
+  height: auto;
+  padding: 30px;
+  margin: 70px auto;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+}
+
+.addproduct-header {
+  position: relative;
+  top: 70px;
+  text-align: center;
+  padding: 20px;
+  color: rgb(30, 30, 30);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.input-box .input-field {
+  width: 90%;
+  height: 60px;
+  font-size: 17px;
+  padding: 0 25px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: 0.3s;
+}
+
+::placeholder {
+  font-weight: 500;
+  color: rgb(30, 30, 30);
+}
+
+.input-field:focus {
+  width: 95%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(186, 155, 155);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.input-submit {
+  position: relative;
+  font-size: 0px;
+}
+
+.submit-btn,
+.cancel-btn {
+  width: 48%;
+  height: 60px;
+  background: rgb(30, 30, 30);
+  color: rgb(230, 230, 230);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 4%;
+  font-size: 18px;
+}
+
+.submit-btn:hover {
+  background: #161616;
+  transform: scale(1.05, 1);
+}
+
+.cancel-btn:hover {
+  background: #d0d0d0;
+  transform: scale(1.05, 1);
+}
+
+.alert-danger,
+.alert-success {
+  position: relative;
+  top: 800px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.input-box.submit-btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

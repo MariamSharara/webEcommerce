@@ -1,0 +1,51 @@
+[
+  {
+      "id": 1,
+      "name":"BEAD EMBROIDERED AND CADY JUMPSUIT",
+      "price": 8250,
+      "image": "./image/model1.webp"
+  },
+  {
+      "id": 2,
+      "name":"JERSEY FLUID ONE-SHOULDER DRESS",
+      "price": 3190,
+      "image": "./image/model2.webp"
+  },
+  {
+      "id": 3,
+      "name":"ATOM EMBROIDERED LONG DRESS",
+      "price": 6325,
+      "image": "./image/model3.webp"
+  },
+  {
+      "id": 4,
+      "name":"COTTON EMBROIDERED TOP",
+      "price": 1485,
+      "image": "./image/model4.webp"
+  },
+  {
+      "id": 5,
+      "name":"SHORT GABARDINE DRESS",
+      "price": 1650,
+      "image": "./image/model5.webp"
+  },
+  {
+      "id": 6,
+      "name":"GABARDINE SHORT JUMPSUIT",
+      "price": 1650,
+      "image": "./image/model6.webp"
+  },
+  {
+      "id": 7,
+      "name":"JERSEY FLUID V-NECK DRESS",
+      "price": 2145,
+      "image": "./image/model7.webp"
+  },
+  {
+      "id": 8,
+      "name":"FLORAL EMBROIDERED TULLE DRESS",
+      "price": 7750,
+      "image": "./image/model8.webp"
+  }
+
+]

@@ -1,0 +1,266 @@
+body {
+  background: rgb(230, 230, 230);
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shopping_cart {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: rgba(30, 30, 30, 0.826);
+  color: #ffffff;
+}
+
+thead th {
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr:hover {
+  background-color: #dfdfdf;
+}
+
+tbody td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+.product-image {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+.delete_product_image {
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.delete_product_image:hover {
+  transform: scale(1.1);
+}
+
+.delete_product_image:active {
+  transform: scale(0.95);
+}
+.no-products {
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 0, auto;
+  font-size: 18px;
+  color: rgb(30, 30, 30);
+  padding: 30px 0;
+}
+.quantity_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.quantity_box input {
+  width: 50px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.update_quantity {
+  padding: 0.5rem 1rem;
+  background-color: #7d7d7d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  min-width: 120px;
+  text-align: center;
+}
+
+.update_quantity:hover {
+  background-color: #5f5f5f;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table_bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.table_bottom .bottom_btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: rgb(30, 30, 30);
+  color: rgb(230, 230, 230);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.table_bottom .bottom_btn:hover {
+  background: #161616;
+  transform: scale(1.05);
+}
+
+a.bottom_btn {
+  display: inline-block;
+  text-align: center;
+}
+
+a.bottom_btn:last-of-type {
+  float: right;
+}
+.checkout {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: rgb(30, 30, 30);
+  color: rgb(230, 230, 230);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  position: relative;
+  left: 1200px;
+} /* Responsive Styles */
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+  .checkout {
+    position: static;
+    margin: 20px auto 0 auto;
+    display: block;
+    width: fit-content;
+  }
+  .table_bottom {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 10px;
+  }
+
+  .product-image {
+    width: 60px;
+  }
+
+  .quantity_box input {
+    width: 40px;
+    font-size: 0.9rem;
+  }
+
+  .update_quantity {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    min-width: 100px;
+  }
+
+  .table_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .table_bottom .bottom_btn,
+  .checkout {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .checkout {
+    left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table {
+    font-size: 12px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 8px;
+  }
+
+  .product-image {
+    width: 50px;
+  }
+
+  .quantity_box input {
+    width: 35px;
+    font-size: 0.8rem;
+  }
+
+  .update_quantity {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    min-width: 80px;
+  }
+
+  .table_bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .table_bottom .bottom_btn,
+  .checkout {
+    font-size: 14px;
+    padding: 8px;
+    margin: 5px 0;
+  }
+}

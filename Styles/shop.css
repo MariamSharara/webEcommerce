@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+  color: rgb(30, 30, 30);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  position: relative;
+  left: 2.5%;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  right: 3%;
+}
+.product_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.product_container .edit_form img {
+  width: auto;
+  height: 170px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.product_container .edit_form {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 5px 14px #888888;
+  width: 300px;
+  height: 380px;
+}
+
+.products .edit_form h3 {
+  margin: 1rem 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  height: 30px;
+}
+
+.products .edit_form .price {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  height: 30px;
+}
+
+.cart_btn {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart_btn:hover {
+  background-color: rgb(50, 50, 50);
+}
+.message {
+  margin-top: 10px;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .product_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  .product_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    text-align: center;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+    max-width: 1000px;
+  }
+  .product_container .edit_form {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+    left: 0;
+  }
+  .products {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product_container .edit_form {
+    padding: 1rem;
+    height: auto;
+  }
+  .products .edit_form h3,
+  .products .edit_form .price {
+    font-size: 0.9rem;
+  }
+  .cart_btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
